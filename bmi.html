@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>BMI calculator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="index.js" type="text/javascript"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <br>
+     <br>
+        <div class="container">
+            <div class="card">
+               
+                <div class="card-header" style="text-align: center" > BMI Calculator</div>
+                <div class="card-body">
+                    <form  class="w-50 m-auto" onsubmit="return false">
+                        <div class="form-group">
+                            <label > Weight </label>
+                            <input type="number" placeholder="Weight in KG" required id="weight" class="form-control">
+                        </div>
+                          <div class="form-group">
+                              <label> Height </label>
+                              <input type="text" placeholder="Height in Feet" required id="height" class="form-control">
+                          </div>
+                            <div>
+                            <button type="submit" class="btn btn-success" onclick="getbmivalue()">Check BMI</button>
+                             </div>
+                             <div class="form-group">
+                                 <label> BMI Calculated Value </label>
+                                 <input type="number" placeholder="Result" id="Bmivalue" class="form-control">
+                             </div>
+                        </form>
+                    </div>
+                    <div class="card-footer" style="text-align: center"> A Health BMI Ranges Between 19 and 25. </div>
+                <div class="card-footer" style="text-align: center"> Made By Harsh Dave 2019©. </div>
+                </div>
+            </div>
+</body>
+</html>
